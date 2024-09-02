@@ -14,8 +14,6 @@ body{
 #header{
 	width: 100%;
 	height: 100vh;
-	/* background-image: url(Images/keer2.jpg); */
-	/* background-color: rgb(156, 153, 242); */
 	background-color: #0c035b;
 	background-size: cover;
 	background-position: center;
@@ -104,7 +102,6 @@ nav ul li a:hover::after{
 	content: '';
 	width: 0;
 	height: 3px;
-	/* background: #ff004f; */
 	background: #ff0000;
 	position: absolute;
 	left: 0;
@@ -169,14 +166,12 @@ nav ul li a:hover::after{
 	transition: background 0.5s;
 }
 .btn:hover{
-	/* background: #ff004f; */
 	background: #ff0000;
 	
 }
 .layer{
 	width: 100%;
 	height: 0%;
-	/* background: #d5698b; */
 	background: linear-gradient(#f7dedee1,#fe0101e2);
 	border-radius: 10px;
 	position: absolute;
@@ -306,11 +301,6 @@ nav ul li a:hover::after{
 	color: #ff004f;
   }
 
-/* #contact{
-	background-color: #0c035b;
-  padding: 40px;
-  text-align: center;
-} */
 .contact-left{
 	flex-basis: 35%;
 }
