@@ -14,7 +14,6 @@ body{
 #header{
 	width: 100%;
 	height: 100vh;
-	background-color: #0c035b;
 	background-size: cover;
 	background-position: center;
 }
@@ -61,7 +60,46 @@ nav ul li a:hover::after{
 .header-text h1{
 	font-size: 60px;
 	margin-top: 20px;
+	animation: text 3s 1;
 }
+.header-text h4{
+	position: relative;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	animation:
+		typing 5s steps(14),
+		cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+	50% {
+		border-color: black;
+	}
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes text {
+	0%{
+		color: rgb(250, 250, 250);
+		margin-bottom: -40px;
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+	}
+	
+}
+
 #about{
 	padding: 80px 0;
 	color: #a29f9f;
@@ -73,14 +111,14 @@ nav ul li a:hover::after{
 	flex-wrap: wrap;
 }
 .about-col-1{
-	flex-basis: 35%;
+	flex-basis: 10%;
 }
 .about-col-1 image{
-	width: 10%;
-	border-radius: 15px;
+	width: 5%;
+	border-radius: 10px;
 }
 .about-col-2{
-	flex-basis: 60%;
+	flex-basis: 50%;
 }
 .sub-title{
 	font-size: 60px;
@@ -226,7 +264,7 @@ nav ul li a:hover::after{
 /* Contact Section Styles */
 #contact {
 	background-color: #323048;
-	padding: 40px;
+	padding: 30px;
 	text-align: center;
 	img {
 		width: 5%;
@@ -234,6 +272,7 @@ nav ul li a:hover::after{
 	  }
   }
   
+
   
   #contact a {
 	color: #e5e8ec;
